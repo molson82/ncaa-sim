@@ -1,6 +1,6 @@
 package models
 
-type Games []struct {
+type Game struct {
 	GameID                            int           `json:"GameID"`
 	Season                            int           `json:"Season"`
 	SeasonType                        int           `json:"SeasonType"`

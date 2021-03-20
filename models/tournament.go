@@ -9,5 +9,5 @@ type Tournament struct {
 	LeftBottomBracketConference  string `json:"LeftBottomBracketConference"`
 	RightTopBracketConference    string `json:"RightTopBracketConference"`
 	RightBottomBracketConference string `json:"RightBottomBracketConference"`
-	Games                        Games  `json:"Games"`
+	Games                        []Game `json:"Games"`
 }
