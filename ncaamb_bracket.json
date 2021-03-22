@@ -1,0 +1,89 @@
+{
+	"sport": "ncaamb",
+	"leftTopBracketConference": "west",
+	"leftBottomBracketConference": "east",
+	"rightTopBracketConference": "south",
+	"rightBottomBracketConference": "midwest",
+	"matches": [
+		{
+			"conference": "west",
+			"teamA": "Gonzaga",
+			"teamB": "Norfolk State"
+		},
+		{
+			"conference": "west",
+			"teamA": "Oklahoma",
+			"teamB": "Missouri"
+		},
+		{
+			"conference": "west",
+			"teamA": "Creighton",
+			"teamB": "UCSB"
+		},
+		{
+			"conference": "west",
+			"teamA": "Virginia",
+			"teamB": "Ohio"
+		},
+		{
+			"conference": "west",
+			"teamA": "USC",
+			"teamB": "Drake"
+		},
+		{
+			"conference": "west",
+			"teamA": "Kansas",
+			"teamB": "Eastern Washington"
+		},
+		{
+			"conference": "west",
+			"teamA": "Oregon",
+			"teamB": "VCU"
+		},
+		{
+			"conference": "west",
+			"teamA": "Iowa",
+			"teamB": "Grand Canyon"
+		},
+		{
+			"conference": "east",
+			"teamA": "Michigan",
+			"teamB": "Texas Southern"
+		},
+		{
+			"conference": "east",
+			"teamA": "LSU",
+			"teamB": "St. Bonaventure"
+		},
+		{
+			"conference": "east",
+			"teamA": "Colorado",
+			"teamB": "Georgetown"
+		},
+		{
+			"conference": "east",
+			"teamA": "Florida State",
+			"teamB": "UNCG Spartans"
+		},
+		{
+			"conference": "east",
+			"teamA": "BYU",
+			"teamB": "UCLA"
+		},
+		{
+			"conference": "east",
+			"teamA": "Texas",
+			"teamB": "Abilene Christian"
+		},
+		{
+			"conference": "east",
+			"teamA": "UConn",
+			"teamB": "Maryland"
+		},
+		{
+			"conference": "east",
+			"teamA": "Alabama",
+			"teamB": "Iona"
+		}
+	]
+}
