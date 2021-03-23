@@ -3,7 +3,9 @@ package main
 import (
 	_ "embed"
 	"fmt"
+	"net/http"
 	"os"
+	"text/template"
 
 	"github.com/joho/godotenv"
 	"github.com/molson82/ncaa-sim/controllers"
@@ -98,4 +100,15 @@ func main() {
 	fmt.Printf("\nSimulating Winning Round...")
 	winner := findWinner(round5Bracket.Games[0].TeamA, round5Bracket.Games[0].TeamB)
 	fmt.Printf("\n\nWinner is %v\n", winner.Name)
+
+	fmt.Printf("\nStarting web server...\n")
+
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		tmpl := template.Must(template.ParseFiles("templates/index.html", "templates/header.tmpl.html", "templates/footer.tmpl.html"))
+		tmpl.Execute(w, nil)
+	})
+	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
+
+	println("server is running on : http://localhost:" + os.Getenv("PORT"))
+	http.ListenAndServe(":"+os.Getenv("PORT"), nil)
 }

@@ -1,0 +1,28 @@
+{
+  "name": "ncaa-sim",
+  "version": "1.0.0",
+  "description": "March Madness NCAA Men's Basketball simulator for bracket creation",
+  "main": "index.js",
+  "scripts": {
+    "build:tailwind": "postcss ./static/css/master.css -o ./static/dist/tailwind.css",
+    "watch": "watch \"npm run build:tailwind\" ./templates"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/molson82/ncaa-sim.git"
+  },
+  "author": "molson82",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/molson82/ncaa-sim/issues"
+  },
+  "homepage": "https://github.com/molson82/ncaa-sim#readme",
+  "devDependencies": {
+    "postcss": "^8.2.8",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.4"
+  },
+  "dependencies": {
+    "watch": "^1.0.2"
+  }
+}

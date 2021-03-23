@@ -1,3 +1,4 @@
 vendor/
 .env
 bin/
+node_modules/
