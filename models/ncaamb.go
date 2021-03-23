@@ -14,6 +14,15 @@ type NCAAMB struct {
 	Matches                      []Match `json:"matches"`
 }
 
+type NCAAMB__c struct {
+	Sport                        string    `json:"sport"`
+	LeftTopBracketConference     string    `json:"leftTopBracketConference"`
+	LeftBottomBracketConference  string    `json:"leftBottomBracketConference"`
+	RightTopBracketConference    string    `json:"rightTopBracketConference"`
+	RightBottomBracketConference string    `json:"rightBottomBracketConference"`
+	Games                        []Game__c `json:"games"`
+}
+
 func ReadInNCAAMBBracket(bracket []byte) (NCAAMB, error) {
 	var ncaambObj NCAAMB
 	decodeErr := json.Unmarshal(bracket, &ncaambObj)

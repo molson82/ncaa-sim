@@ -1,5 +1,11 @@
 package models
 
+type Game__c struct {
+	Conference string `json:"conference"`
+	TeamA      Team   `json:"teamA"`
+	TeamB      Team   `json:"teamB"`
+	Order      int    `json:"order"`
+}
 type Game struct {
 	GameID                            int           `json:"GameID"`
 	Season                            int           `json:"Season"`

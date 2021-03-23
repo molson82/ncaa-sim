@@ -8,82 +8,98 @@
 		{
 			"conference": "west",
 			"teamA": "Gonzaga",
-			"teamB": "Norfolk State"
+			"teamB": "Norfolk State",
+			"order": 1
 		},
 		{
 			"conference": "west",
 			"teamA": "Oklahoma",
-			"teamB": "Missouri"
+			"teamB": "Missouri",
+			"order": 2
 		},
 		{
 			"conference": "west",
 			"teamA": "Creighton",
-			"teamB": "UCSB"
+			"teamB": "UCSB",
+			"order": 3
 		},
 		{
 			"conference": "west",
 			"teamA": "Virginia",
-			"teamB": "Ohio"
+			"teamB": "Ohio",
+			"order": 4
 		},
 		{
 			"conference": "west",
 			"teamA": "USC",
-			"teamB": "Drake"
+			"teamB": "Drake",
+			"order": 5
 		},
 		{
 			"conference": "west",
 			"teamA": "Kansas",
-			"teamB": "Eastern Washington"
+			"teamB": "Eastern Washington",
+			"order": 6
 		},
 		{
 			"conference": "west",
 			"teamA": "Oregon",
-			"teamB": "VCU"
+			"teamB": "VCU",
+			"order": 7
 		},
 		{
 			"conference": "west",
 			"teamA": "Iowa",
-			"teamB": "Grand Canyon"
+			"teamB": "Grand Canyon",
+			"order": 8
 		},
 		{
 			"conference": "east",
 			"teamA": "Michigan",
-			"teamB": "Texas Southern"
+			"teamB": "Texas Southern",
+			"order": 9
 		},
 		{
 			"conference": "east",
 			"teamA": "LSU",
-			"teamB": "St. Bonaventure"
+			"teamB": "St. Bonaventure",
+			"order": 10
 		},
 		{
 			"conference": "east",
 			"teamA": "Colorado",
-			"teamB": "Georgetown"
+			"teamB": "Georgetown",
+			"order": 11
 		},
 		{
 			"conference": "east",
 			"teamA": "Florida State",
-			"teamB": "UNCG Spartans"
+			"teamB": "UNCG Spartans",
+			"order": 12
 		},
 		{
 			"conference": "east",
 			"teamA": "BYU",
-			"teamB": "UCLA"
+			"teamB": "UCLA",
+			"order": 13
 		},
 		{
 			"conference": "east",
 			"teamA": "Texas",
-			"teamB": "Abilene Christian"
+			"teamB": "Abilene Christian",
+			"order": 14
 		},
 		{
 			"conference": "east",
 			"teamA": "UConn",
-			"teamB": "Maryland"
+			"teamB": "Maryland",
+			"order": 15
 		},
 		{
 			"conference": "east",
 			"teamA": "Alabama",
-			"teamB": "Iona"
+			"teamB": "Iona",
+			"order": 16
 		}
 	]
 }

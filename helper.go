@@ -10,26 +10,19 @@ import (
 	"github.com/molson82/ncaa-sim/models"
 )
 
-type team struct {
-	ID     int
-	Name   string
-	Team   string
-	Wins   int
-	Losses int
-}
-
-func findNCAAMBTeams(apiTeams []models.Team, bracket models.NCAAMB) map[string]team {
-	results := make(map[string]team)
-	duplicates := make(map[string][]team)
+func findNCAAMBTeams(apiTeams []models.Team, bracket models.NCAAMB) map[string]models.Team__c {
+	results := make(map[string]models.Team__c)
+	duplicates := make(map[string][]models.Team__c)
 	for _, v := range bracket.Matches {
 		var count int
 		for _, q := range apiTeams {
-			if (strings.Contains(q.Name, v.TeamA)) || (strings.Contains(q.Team, v.TeamA)) {
+			if (strings.Contains(strings.ToLower(q.Name), strings.ToLower(v.TeamA))) ||
+				(strings.Contains(strings.ToLower(q.Team), strings.ToLower(v.TeamA))) {
 				if count > 0 {
-					duplicates[v.TeamA] = append(duplicates[v.TeamA], team{q.TeamID, q.Name, q.Team, q.Wins, q.Losses})
+					duplicates[v.TeamA] = append(duplicates[v.TeamA], models.Team__c{q.TeamID, q.Name, q.Team, q.Wins, q.Losses, v.Order, "A"})
 					continue
 				}
-				results[v.TeamA] = team{q.TeamID, q.Name, q.Team, q.Wins, q.Losses}
+				results[v.TeamA] = models.Team__c{q.TeamID, q.Name, q.Team, q.Wins, q.Losses, v.Order, "A"}
 				count++
 			}
 		}
@@ -37,7 +30,7 @@ func findNCAAMBTeams(apiTeams []models.Team, bracket models.NCAAMB) map[string]t
 	return handleDuplicates(results, duplicates)
 }
 
-func handleDuplicates(result map[string]team, dups map[string][]team) map[string]team {
+func handleDuplicates(result map[string]models.Team__c, dups map[string][]models.Team__c) map[string]models.Team__c {
 	finalResults := result
 OUTER:
 	for k, v := range dups {

@@ -1,5 +1,15 @@
 package models
 
+type Team__c struct {
+	ID     int
+	Name   string
+	Team   string
+	Wins   int
+	Losses int
+	Order  int
+	AorB   string
+}
+
 type Team struct {
 	StatID                        int         `json:"StatID"`
 	TeamID                        int         `json:"TeamID"`
