@@ -47,8 +47,11 @@ func main() {
 	ncaambObj, err3 := models.ReadInNCAAMBBracket(ncaamb_bracket)
 	handleError(err3)
 
-	fmt.Printf("Done.\nFinding Teams In Bracket...")
-	findNCAAMBTeams(teams, ncaambObj)
+	fmt.Printf("Done.\nFinding Teams In Bracket...\n")
+	teamList := findNCAAMBTeams(teams, ncaambObj)
+	for k, v := range teamList {
+		fmt.Printf("\n%v = %v | W: %v, L: %v\n", k, v.Name, v.Wins, v.Losses)
+	}
 
 	// marchMad, err2 := controllers.GetTournamentHierarchy(season.Season, api_key, format)
 	// if err2 != nil {
