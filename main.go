@@ -57,13 +57,45 @@ func main() {
 	fmt.Printf("\nBulding Final Bracket with new team selections...\n")
 	finalBracket, err4 := models.GenerateFinalBracket(teams, ncaambObj, teamList)
 	handleError(err4)
-	for _, v := range finalBracket.Games {
+	// for _, v := range finalBracket.Games {
+	// 	fmt.Printf("\n%v\nvs\n%v\n", v.TeamA.Name, v.TeamB.Name)
+	// }
+	fmt.Printf("\nSimulating First Round...")
+	round1Bracket, err5 := simulateRound(finalBracket)
+	handleError(err5)
+	// for _, v := range round1Bracket.Games {
+	// 	fmt.Printf("\n%v\nvs\n%v\n", v.TeamA.Name, v.TeamB.Name)
+	// }
+
+	fmt.Printf("\nSimulating Second Round...")
+	round2Bracket, err7 := simulateRound(round1Bracket)
+	handleError(err7)
+	// for _, v := range round2Bracket.Games {
+	// 	fmt.Printf("\n%v\nvs\n%v\n", v.TeamA.Name, v.TeamB.Name)
+	// }
+
+	fmt.Printf("\nSimulating Third Round...")
+	round3Bracket, err8 := simulateRound(round2Bracket)
+	handleError(err8)
+	// for _, v := range round3Bracket.Games {
+	// 	fmt.Printf("\n%v\nvs\n%v\n", v.TeamA.Name, v.TeamB.Name)
+	// }
+
+	fmt.Printf("\nSimulating Fourth Round...")
+	round4Bracket, err9 := simulateRound(round3Bracket)
+	handleError(err9)
+	// for _, v := range round4Bracket.Games {
+	// 	fmt.Printf("\n%v\nvs\n%v\n", v.TeamA.Name, v.TeamB.Name)
+	// }
+
+	fmt.Printf("\nSimulating Fifth Round...")
+	round5Bracket, err10 := simulateRound(round4Bracket)
+	handleError(err10)
+	for _, v := range round5Bracket.Games {
 		fmt.Printf("\n%v\nvs\n%v\n", v.TeamA.Name, v.TeamB.Name)
 	}
 
-	// marchMad, err2 := controllers.GetTournamentHierarchy(season.Season, api_key, format)
-	// if err2 != nil {
-	// 	fmt.Printf("ERROR: %v\n", err2)
-	// }
-	// fmt.Printf("Tournament Name: %v\n", marchMad.Name)
+	fmt.Printf("\nSimulating Winning Round...")
+	winner := findWinner(round5Bracket.Games[0].TeamA, round5Bracket.Games[0].TeamB)
+	fmt.Printf("\n\nWinner is %v\n", winner.Name)
 }

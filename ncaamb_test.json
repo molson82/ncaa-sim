@@ -1,0 +1,201 @@
+{
+	"sport": "ncaamb",
+	"leftTopBracketConference": "west",
+	"leftBottomBracketConference": "east",
+	"rightTopBracketConference": "south",
+	"rightBottomBracketConference": "midwest",
+	"matches": [
+		{
+			"conference": "west",
+			"teamA": "Gonzaga Bulldogs",
+			"teamB": "Norfolk State Spartans",
+			"order": 1
+		},
+		{
+			"conference": "west",
+			"teamA": "Oklahoma Sooners",
+			"teamB": "Missouri Tigers",
+			"order": 2
+		},
+		{
+			"conference": "west",
+			"teamA": "Creighton Bluejays",
+			"teamB": "UC Santa Barbara Gauchos",
+			"order": 3
+		},
+		{
+			"conference": "west",
+			"teamA": "Virginia Cavaliers",
+			"teamB": "Ohio Bobcats",
+			"order": 4
+		},
+		{
+			"conference": "west",
+			"teamA": "USC Trojans",
+			"teamB": "Drake Bulldogs",
+			"order": 5
+		},
+		{
+			"conference": "west",
+			"teamA": "Kansas Jayhawks",
+			"teamB": "Eastern Washington Eagles",
+			"order": 6
+		},
+		{
+			"conference": "west",
+			"teamA": "Oregon Ducks",
+			"teamB": "VCU Rams",
+			"order": 7
+		},
+		{
+			"conference": "west",
+			"teamA": "Iowa Hawkeyes",
+			"teamB": "Grand Canyon Antelopes",
+			"order": 8
+		},
+		{
+			"conference": "east",
+			"teamA": "Michigan Wolverines",
+			"teamB": "Texas Southern Tigers",
+			"order": 9
+		},
+		{
+			"conference": "east",
+			"teamA": "LSU Tigers",
+			"teamB": "St. Bonaventure Bonnies",
+			"order": 10
+		},
+		{
+			"conference": "east",
+			"teamA": "Colorado Buffaloes",
+			"teamB": "Georgetown Hoyas",
+			"order": 11
+		},
+		{
+			"conference": "east",
+			"teamA": "Florida State Seminoles",
+			"teamB": "UNCG Spartans",
+			"order": 12
+		},
+		{
+			"conference": "east",
+			"teamA": "BYU Cougars",
+			"teamB": "UCLA Bruins",
+			"order": 13
+		},
+		{
+			"conference": "east",
+			"teamA": "Texas Longhorns",
+			"teamB": "Abilene Christian Wildcats",
+			"order": 14
+		},
+		{
+			"conference": "east",
+			"teamA": "Connecticut Huskies",
+			"teamB": "Maryland Terrapins",
+			"order": 15
+		},
+		{
+			"conference": "east",
+			"teamA": "Alabama Crimson Tide",
+			"teamB": "Iona Gaels",
+			"order": 16
+		},
+		{
+			"conference": "south",
+			"teamA": "Baylor Bears",
+			"teamB": "Hartford Hawks",
+			"order": 17
+		},
+		{
+			"conference": "south",
+			"teamA": "North Carolina Tar Heels",
+			"teamB": "Wisconsin Badgers",
+			"order": 18
+		},
+		{
+			"conference": "south",
+			"teamA": "Villanova Wildcats",
+			"teamB": "Winthrop Eagles",
+			"order": 19
+		},
+		{
+			"conference": "south",
+			"teamA": "Purdue Boilermakers",
+			"teamB": "North Texas Mean Green",
+			"order": 20
+		},
+		{
+			"conference": "south",
+			"teamA": "Texas Tech Red Raiders",
+			"teamB": "Utah State Aggies",
+			"order": 21
+		},
+		{
+			"conference": "south",
+			"teamA": "Arkansas Razorbacks",
+			"teamB": "Colgate Raiders",
+			"order": 22
+		},
+		{
+			"conference": "south",
+			"teamA": "Florida Gators",
+			"teamB": "Virginia Tech Hokies",
+			"order": 23
+		},
+		{
+			"conference": "south",
+			"teamA": "Ohio State Buckeyes",
+			"teamB": "Oral Roberts Golden Eagles",
+			"order": 24
+		},
+		{
+			"conference": "midwest",
+			"teamA": "Illinois Fighting Illini",
+			"teamB": "Drexel Dragons",
+			"order": 25
+		},
+		{
+			"conference": "midwest",
+			"teamA": "Loyola Chicago Ramblers",
+			"teamB": "Georgia Tech Yellow Jackets",
+			"order": 26
+		},
+		{
+			"conference": "midwest",
+			"teamA": "Tennessee Volunteers",
+			"teamB": "Oregon State Beavers",
+			"order": 27
+		},
+		{
+			"conference": "midwest",
+			"teamA": "Oklahoma State Cowboys",
+			"teamB": "Liberty Flames",
+			"order": 28
+		},
+		{
+			"conference": "midwest",
+			"teamA": "San Diego State Aztecs",
+			"teamB": "Syracuse Orange",
+			"order": 29
+		},
+		{
+			"conference": "midwest",
+			"teamA": "West Virginia Mountaineers",
+			"teamB": "Morehead State Eagles",
+			"order": 30
+		},
+		{
+			"conference": "midwest",
+			"teamA": "Clemson Tigers",
+			"teamB": "Rutgers Scarlet Knights",
+			"order": 31
+		},
+		{
+			"conference": "midwest",
+			"teamA": "Houston Cougars",
+			"teamB": "Cleveland State Vikings",
+			"order": 32
+		}
+	]
+}

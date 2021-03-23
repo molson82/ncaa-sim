@@ -100,6 +100,102 @@
 			"teamA": "Alabama",
 			"teamB": "Iona",
 			"order": 16
+		},
+		{
+			"conference": "south",
+			"teamA": "Baylor",
+			"teamB": "Hartford",
+			"order": 17
+		},
+		{
+			"conference": "south",
+			"teamA": "North Carolina",
+			"teamB": "Wisconsin",
+			"order": 18
+		},
+		{
+			"conference": "south",
+			"teamA": "Villanova",
+			"teamB": "Winthrop",
+			"order": 19
+		},
+		{
+			"conference": "south",
+			"teamA": "Purdue",
+			"teamB": "North Texas",
+			"order": 20
+		},
+		{
+			"conference": "south",
+			"teamA": "Texas Tech",
+			"teamB": "Utah State",
+			"order": 21
+		},
+		{
+			"conference": "south",
+			"teamA": "Arkansas",
+			"teamB": "Colgate",
+			"order": 22
+		},
+		{
+			"conference": "south",
+			"teamA": "Florida",
+			"teamB": "Virginia Tech",
+			"order": 23
+		},
+		{
+			"conference": "south",
+			"teamA": "Ohio State",
+			"teamB": "Oral Roberts",
+			"order": 24
+		},
+		{
+			"conference": "midwest",
+			"teamA": "Illinois",
+			"teamB": "Drexel",
+			"order": 25
+		},
+		{
+			"conference": "midwest",
+			"teamA": "Loyola Chicago",
+			"teamB": "Georgia Tech",
+			"order": 26
+		},
+		{
+			"conference": "midwest",
+			"teamA": "Tennessee",
+			"teamB": "Oregon State",
+			"order": 27
+		},
+		{
+			"conference": "midwest",
+			"teamA": "Oklahoma State",
+			"teamB": "Liberty",
+			"order": 28
+		},
+		{
+			"conference": "midwest",
+			"teamA": "San Diego State",
+			"teamB": "Syracuse",
+			"order": 29
+		},
+		{
+			"conference": "midwest",
+			"teamA": "West Virginia",
+			"teamB": "Morehead State",
+			"order": 30
+		},
+		{
+			"conference": "midwest",
+			"teamA": "Clemson",
+			"teamB": "Rutgers",
+			"order": 31
+		},
+		{
+			"conference": "midwest",
+			"teamA": "Houston",
+			"teamB": "Cleveland State",
+			"order": 32
 		}
 	]
 }
