@@ -93,9 +93,9 @@ func main() {
 	fmt.Printf("\nSimulating Fifth Round...")
 	round5Bracket, err10 := simulateRound(round4Bracket)
 	handleError(err10)
-	for _, v := range round5Bracket.Games {
-		fmt.Printf("\n%v\nvs\n%v\n", v.TeamA.Name, v.TeamB.Name)
-	}
+	// for _, v := range round5Bracket.Games {
+	// 	fmt.Printf("\n%v\nvs\n%v\n", v.TeamA.Name, v.TeamB.Name)
+	// }
 
 	fmt.Printf("\nSimulating Winning Round...")
 	winner := findWinner(round5Bracket.Games[0].TeamA, round5Bracket.Games[0].TeamB)
@@ -104,8 +104,9 @@ func main() {
 	fmt.Printf("\nStarting web server...\n")
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		tmpl := template.Must(template.ParseFiles("templates/index.html", "templates/header.tmpl.html", "templates/footer.tmpl.html"))
-		tmpl.Execute(w, nil)
+		tmpl := template.Must(template.ParseFiles("templates/index.html", "templates/header.tmpl.html", "templates/footer.tmpl.html",
+			"templates/leftBracket.tmpl.html"))
+		tmpl.Execute(w, winner)
 	})
 	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
 

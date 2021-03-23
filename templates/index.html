@@ -1,8 +1,23 @@
-{{template "header.tmpl.html"}}
-
-<div class="mt-40 text-center bg-blue-100 border-t border-b border-blue-500 text-blue-700 px-4 py-3">
-	<h1 class="font-bold">Tailwind with Go</h1>
-	<p class="text-sm">Setup golang with tailwind css using postc</p>
+{{template "header"}}
+<!-- WEST -->
+<div id="west" class="w-full bg-green-300">
+	{{template "leftBracket" .}}
+</div>
+<!-- SOUTH -->
+<div id="south" class="w-full bg-blue-300">
+	<h1 class="font-bold">South</h1>
+</div>
+<!-- EAST -->
+<div id="east" class="w-full bg-red-300">
+	<h1 class="font-bold">East</h1>
+</div>
+<!-- MIDWEST -->
+<div id="midwest" class="w-full bg-yellow-300">
+	<h1 class="font-bold">Midwest</h1>
+</div>
+<!-- FINALS -->
+<div id="finals" class="w-full col-span-2 text-center bg-purple-300">
+	<h1 class="font-bold">{{ .Name }}</h1>
 </div>
 
-{{template "footer.tmpl.html"}}
+{{template "footer"}}
