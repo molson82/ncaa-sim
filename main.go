@@ -13,7 +13,7 @@ import (
 var api_key string
 var format string
 
-//go:embed "ncaamb_bracket.json"
+//go:embed "ncaamb_test.json"
 var ncaamb_bracket []byte
 
 func initEnv() {
