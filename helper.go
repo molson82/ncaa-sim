@@ -27,6 +27,20 @@ func findNCAAMBTeams(apiTeams []models.Team, bracket models.NCAAMB) map[string]m
 			}
 		}
 	}
+	for _, v := range bracket.Matches {
+		var count int
+		for _, q := range apiTeams {
+			if (strings.Contains(strings.ToLower(q.Name), strings.ToLower(v.TeamB))) ||
+				(strings.Contains(strings.ToLower(q.Team), strings.ToLower(v.TeamB))) {
+				if count > 0 {
+					duplicates[v.TeamB] = append(duplicates[v.TeamB], models.Team__c{q.TeamID, q.Name, q.Team, q.Wins, q.Losses, v.Order, "B"})
+					continue
+				}
+				results[v.TeamB] = models.Team__c{q.TeamID, q.Name, q.Team, q.Wins, q.Losses, v.Order, "B"}
+				count++
+			}
+		}
+	}
 	return handleDuplicates(results, duplicates)
 }
 

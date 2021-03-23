@@ -49,12 +49,17 @@ func main() {
 
 	fmt.Printf("Done.\nFinding Teams In Bracket...\n")
 	teamList := findNCAAMBTeams(teams, ncaambObj)
-	fmt.Printf("Done.\nFinal List of Teams: \n")
-	for k, v := range teamList {
-		fmt.Printf("\n%v = %v | W: %v, L: %v\n", k, v.Name, v.Wins, v.Losses)
-	}
+	// fmt.Printf("Done.\nFinal List of Teams: \n")
+	// for k, v := range teamList {
+	// 	fmt.Printf("\n%v = %v | W: %v, L: %v\n", k, v.Name, v.Wins, v.Losses)
+	// }
 
 	fmt.Printf("\nBulding Final Bracket with new team selections...\n")
+	finalBracket, err4 := models.GenerateFinalBracket(teams, ncaambObj, teamList)
+	handleError(err4)
+	for _, v := range finalBracket.Games {
+		fmt.Printf("\n%v\nvs\n%v\n", v.TeamA.Name, v.TeamB.Name)
+	}
 
 	// marchMad, err2 := controllers.GetTournamentHierarchy(season.Season, api_key, format)
 	// if err2 != nil {
