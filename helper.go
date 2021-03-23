@@ -38,7 +38,7 @@ func findNCAAMBTeams(apiTeams []models.Team, bracket models.NCAAMB) map[string]t
 }
 
 func handleDuplicates(result map[string]team, dups map[string][]team) map[string]team {
-	finalResults := make(map[string]team)
+	finalResults := result
 OUTER:
 	for k, v := range dups {
 		fmt.Printf("\n-----------------------------------------------------------------------------")
