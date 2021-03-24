@@ -11,13 +11,15 @@ func simulateRound(bracket models.NCAAMB__c) (models.NCAAMB__c, error) {
 	newBracket.RightBottomBracketConference = bracket.RightBottomBracketConference
 
 	var newGames []models.Game__c
+	j := 1
 	for i := 0; i < len(bracket.Games)-1; i += 2 {
 		var newGame models.Game__c
 		newGame.Conference = bracket.Games[i].Conference
 		newGame.TeamA = findWinner(bracket.Games[i].TeamA, bracket.Games[i].TeamB)
 		newGame.TeamB = findWinner(bracket.Games[i+1].TeamA, bracket.Games[i+1].TeamB)
-		newGame.Order = i + 1
+		newGame.Order = j
 		newGames = append(newGames, newGame)
+		j++
 	}
 	newBracket.Games = newGames
 

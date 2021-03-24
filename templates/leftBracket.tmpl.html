@@ -1,3 +1,32 @@
 {{define "leftBracket"}}
-<h1 class="font-bold">West</h1>
+
+{{$r1 := .R1.Games}}
+<div class="grid grid-cols-4">
+	<div id="sb">
+		{{range $i, $v := .SB.Games}}
+			{{if le .Order 8}}
+			{{$j := divide $i 2}}
+			{{$r1W :=  index $r1 $j}}
+			{{if eq $r1W.TeamA.Name $v.TeamA.Name}}
+				<div class="grid content-center h-8 overflow-hidden border-4 border-gray-300 border-solid mb-2 bg-green-300">{{$v.TeamA.Name}}</div>
+			{{else}}
+				<div class="grid content-center h-8 overflow-hidden border-4 border-gray-300 border-solid mb-2">{{$v.TeamA.Name}}</div>
+			{{end}}
+			{{if eq $r1W.TeamB.Name $v.TeamB.Name}}
+				<div class="grid content-center h-8 overflow-hidden border-4 border-gray-300 border-solid mb-6 bg-green-300">{{$v.TeamB.Name}}</div>
+			{{else}}
+				<div class="grid content-center h-8 overflow-hidden border-4 border-gray-300 border-solid mb-6">{{$v.TeamB.Name}}</div>
+			{{end}}
+			{{end}}
+		{{end}}
+	</div>
+	<div id="r1" class="pt-4">
+		{{range .R1.Games}}
+			{{if le .Order 4}}
+				<div class="grid content-center h-8 overflow-hidden border-4 border-gray-300 border-solid" style="margin-bottom: 4.25rem;">{{.TeamA.Name}}</div>
+				<div class="grid content-center h-8 overflow-hidden border-4 border-gray-300 border-solid" style="margin-bottom: 3.8rem;">{{.TeamB.Name}}</div>
+			{{end}}
+		{{end}}
+	</div>
+</div>
 {{end}}

@@ -1,0 +1,201 @@
+{
+	"sport": "ncaamb",
+	"leftTopBracketConference": "west",
+	"leftBottomBracketConference": "east",
+	"rightTopBracketConference": "south",
+	"rightBottomBracketConference": "midwest",
+	"matches": [
+		{
+			"conference": "west",
+			"teamA": "Duke",
+			"teamB": "North Dakota State",
+			"order": 1
+		},
+		{
+			"conference": "west",
+			"teamA": "VCU",
+			"teamB": "UCF",
+			"order": 2
+		},
+		{
+			"conference": "west",
+			"teamA": "Mississippi State",
+			"teamB": "Liberty",
+			"order": 3
+		},
+		{
+			"conference": "west",
+			"teamA": "Virginia Tech",
+			"teamB": "Saint Louis",
+			"order": 4
+		},
+		{
+			"conference": "west",
+			"teamA": "Maryland",
+			"teamB": "Belmont",
+			"order": 5
+		},
+		{
+			"conference": "west",
+			"teamA": "LSU",
+			"teamB": "Yale",
+			"order": 6
+		},
+		{
+			"conference": "west",
+			"teamA": "Louisville",
+			"teamB": "Minnesota",
+			"order": 7
+		},
+		{
+			"conference": "west",
+			"teamA": "Michigan State",
+			"teamB": "Bradley",
+			"order": 8
+		},
+		{
+			"conference": "east",
+			"teamA": "Gonzaga",
+			"teamB": "Fairleigh Dickinson",
+			"order": 9
+		},
+		{
+			"conference": "east",
+			"teamA": "Syracuse",
+			"teamB": "Baylor",
+			"order": 10
+		},
+		{
+			"conference": "east",
+			"teamA": "Marquette",
+			"teamB": "Murray State",
+			"order": 11
+		},
+		{
+			"conference": "east",
+			"teamA": "Florida State",
+			"teamB": "Vermont",
+			"order": 12
+		},
+		{
+			"conference": "east",
+			"teamA": "Buffalo",
+			"teamB": "Arizona State",
+			"order": 13
+		},
+		{
+			"conference": "east",
+			"teamA": "Texas Tech",
+			"teamB": "Northern Kentucky",
+			"order": 14
+		},
+		{
+			"conference": "east",
+			"teamA": "Nevada",
+			"teamB": "Florida",
+			"order": 15
+		},
+		{
+			"conference": "east",
+			"teamA": "Michigan",
+			"teamB": "Montana",
+			"order": 16
+		},
+		{
+			"conference": "south",
+			"teamA": "Virginia",
+			"teamB": "Gardner-Webb",
+			"order": 17
+		},
+		{
+			"conference": "south",
+			"teamA": "Mississippi",
+			"teamB": "Oklahoma",
+			"order": 18
+		},
+		{
+			"conference": "south",
+			"teamA": "Wisconsin",
+			"teamB": "Oregon",
+			"order": 19
+		},
+		{
+			"conference": "south",
+			"teamA": "Kansas State",
+			"teamB": "UC Irvine",
+			"order": 20
+		},
+		{
+			"conference": "south",
+			"teamA": "Villanova",
+			"teamB": "Saint Mary's",
+			"order": 21
+		},
+		{
+			"conference": "south",
+			"teamA": "Purdue",
+			"teamB": "Old Dominion",
+			"order": 22
+		},
+		{
+			"conference": "south",
+			"teamA": "Cincinnati",
+			"teamB": "Iowa",
+			"order": 23
+		},
+		{
+			"conference": "south",
+			"teamA": "Tennessee",
+			"teamB": "Colgate",
+			"order": 24
+		},
+		{
+			"conference": "midwest",
+			"teamA": "North Carolina",
+			"teamB": "Iona",
+			"order": 25
+		},
+		{
+			"conference": "midwest",
+			"teamA": "Utah State",
+			"teamB": "Washington",
+			"order": 26
+		},
+		{
+			"conference": "midwest",
+			"teamA": "Auburn",
+			"teamB": "New Mexico State",
+			"order": 27
+		},
+		{
+			"conference": "midwest",
+			"teamA": "Kansas",
+			"teamB": "Northeastern",
+			"order": 28
+		},
+		{
+			"conference": "midwest",
+			"teamA": "Iowa State",
+			"teamB": "Ohio State",
+			"order": 29
+		},
+		{
+			"conference": "midwest",
+			"teamA": "Houston",
+			"teamB": "Georgia State",
+			"order": 30
+		},
+		{
+			"conference": "midwest",
+			"teamA": "Wofford",
+			"teamB": "Seton Hall",
+			"order": 31
+		},
+		{
+			"conference": "midwest",
+			"teamA": "Kentucky",
+			"teamB": "Abilene Christ",
+			"order": 32
+		}
+	]
+}
