@@ -1,0 +1,67 @@
+{{define "topLeftBracket"}}
+
+{{$r1 := .R1.Games}}
+{{$r2 := .R2.Games}}
+{{$r3 := .R3.Games}}
+<div class="grid grid-cols-4">
+	<div id="sb">
+		{{range $i, $v := .SB.Games}}
+			{{if le .Order 8}}
+				{{$r1W := (index $r1 (divide $i 2))}}
+				{{if (or (eq $r1W.TeamA.Name $v.TeamA.Name) (eq $r1W.TeamB.Name $v.TeamA.Name))}}
+					<div class="h-8 overflow-hidden border-4 border-gray-300 border-solid mb-2 bg-green-300">{{$v.TeamA.Name}}</div>
+				{{else}}
+					<div class="h-8 overflow-hidden border-4 border-gray-300 border-solid mb-2">{{$v.TeamA.Name}}</div>
+				{{end}}
+				{{if (or (eq $r1W.TeamA.Name $v.TeamB.Name) (eq $r1W.TeamB.Name $v.TeamB.Name))}}
+					<div class="h-8 overflow-hidden border-4 border-gray-300 border-solid mb-6 bg-green-300">{{$v.TeamB.Name}}</div>
+				{{else}}
+					<div class="h-8 overflow-hidden border-4 border-gray-300 border-solid mb-6">{{$v.TeamB.Name}}</div>
+				{{end}}
+			{{end}}
+		{{end}}
+	</div>
+	<div id="r1" class="pt-4">
+		{{range $i, $v := .R1.Games}}
+			{{if le .Order 4}}
+				{{$r2W := (index $r2 (divide $i 2))}}
+				{{if (or (eq $r2W.TeamA.Name $v.TeamA.Name) (eq $r2W.TeamB.Name $v.TeamA.Name))}}
+					<div class="h-8 overflow-hidden border-4 border-gray-300 border-solid bg-green-300" style="margin-bottom: 4.25rem;">{{$v.TeamA.Name}}</div>
+				{{else}}
+					<div class="h-8 overflow-hidden border-4 border-gray-300 border-solid" style="margin-bottom: 4.25rem;">{{$v.TeamA.Name}}</div>
+				{{end}}
+				{{if (or (eq $r2W.TeamA.Name $v.TeamB.Name) (eq $r2W.TeamB.Name $v.TeamB.Name))}}
+					<div class="h-8 overflow-hidden border-4 border-gray-300 border-solid bg-green-300" style="margin-bottom: 3.8rem;">{{$v.TeamB.Name}}</div>
+				{{else}}
+					<div class="h-8 overflow-hidden border-4 border-gray-300 border-solid" style="margin-bottom: 3.8rem;">{{$v.TeamB.Name}}</div>
+				{{end}}
+			{{end}}
+		{{end}}
+	</div>
+	<div id="r2" class="pt-16">
+		{{range $i, $v := .R2.Games}}
+			{{if le .Order 2}}
+				{{$r3W := (index $r3 (divide $i 2))}}
+				{{if (or (eq $r3W.TeamA.Name $v.TeamA.Name) (eq $r3W.TeamB.Name $v.TeamA.Name))}}
+					<div class="h-8 overflow-hidden border-4 border-gray-300 border-solid mb-40 bg-green-300">{{$v.TeamA.Name}}</div>
+				{{else}}
+					<div class="h-8 overflow-hidden border-4 border-gray-300 border-solid mb-40">{{$v.TeamA.Name}}</div>
+				{{end}}
+				{{if (or (eq $r3W.TeamA.Name $v.TeamB.Name) (eq $r3W.TeamB.Name $v.TeamB.Name))}}
+					<div class="h-8 overflow-hidden border-4 border-gray-300 border-solid mb-40 bg-green-300">{{$v.TeamB.Name}}</div>
+				{{else}}
+					<div class="h-8 overflow-hidden border-4 border-gray-300 border-solid mb-40">{{$v.TeamB.Name}}</div>
+				{{end}}
+			{{end}}
+		{{end}}
+	</div>
+	<div id="r3" class="pt-40">
+		{{range .R3.Games}}
+			{{if le .Order 1}}
+				<div class="h-8 overflow-hidden border-4 border-gray-300 border-solid" style="margin-bottom: 22rem;">{{.TeamA.Name}}</div>
+				<div class="h-8 overflow-hidden border-4 border-gray-300 border-solid">{{.TeamB.Name}}</div>
+			{{end}}
+		{{end}}
+	</div>
+</div>
+{{end}}

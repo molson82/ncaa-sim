@@ -65,9 +65,9 @@ func main() {
 	fmt.Printf("\nSimulating First Round...")
 	round1Bracket, err5 := simulateRound(finalBracket)
 	handleError(err5)
-	for _, v := range round1Bracket.Games {
-		fmt.Printf("\nOrder: %v\n%v\nvs\n%v\n", v.Order, v.TeamA.Name, v.TeamB.Name)
-	}
+	// for _, v := range round1Bracket.Games {
+	// 	fmt.Printf("\nOrder: %v\n%v\nvs\n%v\n", v.Order, v.TeamA.Name, v.TeamB.Name)
+	// }
 
 	fmt.Printf("\nSimulating Second Round...")
 	round2Bracket, err7 := simulateRound(round1Bracket)
@@ -79,9 +79,9 @@ func main() {
 	fmt.Printf("\nSimulating Third Round...")
 	round3Bracket, err8 := simulateRound(round2Bracket)
 	handleError(err8)
-	// for _, v := range round3Bracket.Games {
-	// 	fmt.Printf("\n%v\nvs\n%v\n", v.TeamA.Name, v.TeamB.Name)
-	// }
+	for _, v := range round3Bracket.Games {
+		fmt.Printf("\n%v\nvs\n%v\n", v.TeamA.Name, v.TeamB.Name)
+	}
 
 	fmt.Printf("\nSimulating Fourth Round...")
 	round4Bracket, err9 := simulateRound(round3Bracket)
@@ -116,7 +116,8 @@ func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		tmpl := template.Must(template.New("index.html").
 			Funcs(template.FuncMap{"divide": func(n1 int, n2 int) int { return n1 / n2 }}).
-			ParseFiles("templates/index.html", "templates/header.tmpl.html", "templates/footer.tmpl.html", "templates/leftBracket.tmpl.html"))
+			ParseFiles("templates/index.html", "templates/header.tmpl.html", "templates/footer.tmpl.html",
+				"templates/topLeftBracket.tmpl.html", "templates/bottomLeftBracket.tmpl.html"))
 		tmpl.Execute(w, data)
 	})
 	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
