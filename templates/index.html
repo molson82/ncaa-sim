@@ -1,25 +1,33 @@
 {{template "header"}}
-<!-- WEST -->
-<div id="west" class="w-full">
-	<h1 class="font-bold">WEST</h1>
-	{{template "topLeftBracket" .}}
+<div class="grid grid-cols-2 grid-rows-1">
+	<!-- WEST -->
+	<div id="west" class="w-full">
+		<h1 class="font-bold">WEST</h1>
+		{{template "topLeftBracket" .}}
+	</div>
+	<!-- SOUTH -->
+	<div id="south" class="w-full">
+		<h1 class="font-bold text-right">SOUTH</h1>
+		{{template "topRightBracket" .}}
+	</div>
 </div>
-<!-- SOUTH -->
-<div id="south" class="w-full">
-	<h1 class="font-bold">South</h1>
-</div>
-<!-- EAST -->
-<div id="east" class="w-full">
-	<h1 class="font-bold">EAST</h1>
-	{{template "bottomLeftBracket" .}}
-</div>
-<!-- MIDWEST -->
-<div id="midwest" class="w-full">
-	<h1 class="font-bold">Midwest</h1>
-</div>
+
 <!-- FINALS -->
-<div id="finals" class="w-full col-span-2 text-center">
-	<h1 class="font-bold">{{ .Name }}</h1>
+<div id="finals" class="w-full h-auto text-center">
+	<h1 class="font-bold">FINALS</h1>
+</div>
+
+<div class="grid grid-cols-2 grid-rows-1">
+	<!-- EAST -->
+	<div id="east" class="w-full">
+		<h1 class="font-bold">EAST</h1>
+		{{template "bottomLeftBracket" .}}
+	</div>
+	<!-- MIDWEST -->
+	<div id="midwest" class="w-full">
+		<h1 class="font-bold text-right">MIDWEST</h1>
+		{{template "bottomRightBracket" .}}
+	</div>
 </div>
 
 {{template "footer"}}
