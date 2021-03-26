@@ -1,3 +1,54 @@
 {{define "finals"}}
 
+{{$r5 := .R5.Games}}
+{{$winner := .Winner}}
+<div class="grid grid-cols-3">
+	<div id="semi1" class="justify-self-end">
+		{{range $i, $v := .R4.Games}}
+			{{if eq .Order 1}}
+				{{$r5W := index $r5 0}}
+				{{if (or (eq $r5W.TeamA.Name $v.TeamA.Name) (eq $r5W.TeamB.Name $v.TeamA.Name))}}
+					<div class="h-8 overflow-hidden border-4 border-gray-300 border-solid mb-2 px-4 bg-green-300">{{$v.TeamA.Name}}</div>
+				{{else}}
+					<div class="h-8 overflow-hidden border-4 border-gray-300 border-solid mb-2 px-4">{{$v.TeamA.Name}}</div>
+				{{end}}
+				{{if (or (eq $r5W.TeamA.Name $v.TeamB.Name) (eq $r5W.TeamB.Name $v.TeamB.Name))}}
+					<div class="h-8 overflow-hidden border-4 border-gray-300 border-solid px-4 bg-green-300">{{$v.TeamB.Name}}</div>
+				{{else}}
+					<div class="h-8 overflow-hidden border-4 border-gray-300 border-solid px-4">{{$v.TeamB.Name}}</div>
+				{{end}}
+			{{end}}
+		{{end}}
+	</div>
+	<div id="finals" style="justify-self: center;">
+		{{range .R5.Games}}
+			{{if eq .Order 1}}
+				{{if eq $winner.Name .TeamA.Name}}
+					<div class="h-8 overflow-hidden border-4 border-gray-300 border-solid mb-2 px-4 bg-yellow-300">{{.TeamA.Name}}</div>
+					<div class="h-8 overflow-hidden border-4 border-gray-300 border-solid px-4">{{.TeamB.Name}}</div>
+				{{else}}
+					<div class="h-8 overflow-hidden border-4 border-gray-300 border-solid mb-2 px-4">{{.TeamA.Name}}</div>
+					<div class="h-8 overflow-hidden border-4 border-gray-300 border-solid px-4 bg-yellow-300">{{.TeamB.Name}}</div>
+				{{end}}
+			{{end}}
+		{{end}}
+	</div>
+	<div id="semi2" style="justify-self: start;">
+		{{range $i, $v := .R4.Games}}
+			{{if eq .Order 2}}
+				{{$r5W := index $r5 0}}
+				{{if (or (eq $r5W.TeamA.Name $v.TeamA.Name) (eq $r5W.TeamB.Name $v.TeamA.Name))}}
+					<div class="h-8 overflow-hidden border-4 border-gray-300 border-solid mb-2 px-4 bg-green-300">{{$v.TeamA.Name}}</div>
+				{{else}}
+					<div class="h-8 overflow-hidden border-4 border-gray-300 border-solid mb-2 px-4">{{$v.TeamA.Name}}</div>
+				{{end}}
+				{{if (or (eq $r5W.TeamA.Name $v.TeamB.Name) (eq $r5W.TeamB.Name $v.TeamB.Name))}}
+					<div class="h-8 overflow-hidden border-4 border-gray-300 border-solid px-4 bg-green-300">{{$v.TeamB.Name}}</div>
+				{{else}}
+					<div class="h-8 overflow-hidden border-4 border-gray-300 border-solid px-4">{{$v.TeamB.Name}}</div>
+				{{end}}
+			{{end}}
+		{{end}}
+	</div>
+</div>
 {{end}}

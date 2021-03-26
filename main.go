@@ -118,7 +118,7 @@ func main() {
 			Funcs(template.FuncMap{"divide": func(n1 int, n2 int) int { return n1 / n2 }}).
 			ParseFiles("templates/index.html", "templates/header.tmpl.html", "templates/footer.tmpl.html",
 				"templates/topLeftBracket.tmpl.html", "templates/bottomLeftBracket.tmpl.html", "templates/topRightBracket.tmpl.html",
-				"templates/bottomRightBracket.tmpl.html"))
+				"templates/bottomRightBracket.tmpl.html", "templates/finals.tmpl.html"))
 		tmpl.Execute(w, data)
 	})
 	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))

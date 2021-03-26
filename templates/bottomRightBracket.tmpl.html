@@ -3,12 +3,22 @@
 {{$r1 := .R1.Games}}
 {{$r2 := .R2.Games}}
 {{$r3 := .R3.Games}}
+{{$r4 := .R4.Games}}
 <div class="grid grid-cols-4 pl-4">
 	<div id="r3" class="pt-40">
-		{{range .R3.Games}}
+		{{range $i, $v := .R3.Games}}
 			{{if (and (gt .Order 3) (le .Order 4))}}
-				<div class="h-8 overflow-hidden border-4 border-gray-300 border-solid" style="margin-bottom: 22rem;">{{.TeamA.Name}}</div>
-				<div class="h-8 overflow-hidden border-4 border-gray-300 border-solid">{{.TeamB.Name}}</div>
+				{{$r4W := (index $r4 (divide $i 2))}}
+				{{if (or (eq $r4W.TeamA.Name $v.TeamA.Name) (eq $r4W.TeamB.Name $v.TeamA.Name))}}
+					<div class="h-8 overflow-hidden border-4 border-gray-300 border-solid bg-green-300" style="margin-bottom: 22rem;">{{$v.TeamA.Name}}</div>
+				{{else}}
+					<div class="h-8 overflow-hidden border-4 border-gray-300 border-solid" style="margin-bottom: 22rem;">{{$v.TeamA.Name}}</div>
+				{{end}}
+				{{if (or (eq $r4W.TeamA.Name $v.TeamB.Name) (eq $r4W.TeamB.Name $v.TeamB.Name))}}
+					<div class="h-8 overflow-hidden border-4 border-gray-300 border-solid bg-green-300">{{$v.TeamB.Name}}</div>
+				{{else}}
+					<div class="h-8 overflow-hidden border-4 border-gray-300 border-solid">{{$v.TeamB.Name}}</div>
+				{{end}}
 			{{end}}
 		{{end}}
 	</div>
