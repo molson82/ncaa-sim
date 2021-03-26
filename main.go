@@ -73,15 +73,15 @@ func main() {
 	round2Bracket, err7 := simulateRound(round1Bracket)
 	handleError(err7)
 	// for _, v := range round2Bracket.Games {
-	// 	fmt.Printf("\n%v\nvs\n%v\n", v.TeamA.Name, v.TeamB.Name)
+	// 	fmt.Printf("\n%v | W: %v\nvs\n%v | W: %v\n", v.TeamA.Name, v.TeamA.Wins, v.TeamB.Name, v.TeamB.Wins)
 	// }
 
 	fmt.Printf("\nSimulating Third Round...")
 	round3Bracket, err8 := simulateRound(round2Bracket)
 	handleError(err8)
-	for _, v := range round3Bracket.Games {
-		fmt.Printf("\n%v\nvs\n%v\n", v.TeamA.Name, v.TeamB.Name)
-	}
+	// for _, v := range round3Bracket.Games {
+	// 	fmt.Printf("\n%v\nvs\n%v\n", v.TeamA.Name, v.TeamB.Name)
+	// }
 
 	fmt.Printf("\nSimulating Fourth Round...")
 	round4Bracket, err9 := simulateRound(round3Bracket)
