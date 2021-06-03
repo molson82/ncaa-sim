@@ -1,0 +1,57 @@
+{
+  "sport": "nhl",
+  "leftTopBracketConference": "west",
+  "leftBottomBracketConference": "east",
+  "rightTopBracketConference": "south",
+  "rightBottomBracketConference": "midwest",
+  "matches": [
+    {
+      "conference": "west",
+      "teamA": "Maple Leafs",
+      "teamB": "Canadians",
+      "order": 1
+    },
+    {
+      "conference": "west",
+      "teamA": "Oilers",
+      "teamB": "Jets",
+      "order": 2
+    },
+    {
+      "conference": "east",
+      "teamA": "Hurricanes",
+      "teamB": "Predators",
+      "order": 3
+    },
+    {
+      "conference": "east",
+      "teamA": "Panthers",
+      "teamB": "Lightning",
+      "order": 4
+    },
+    {
+      "conference": "south",
+      "teamA": "Penguins",
+      "teamB": "Islanders",
+      "order": 5
+    },
+    {
+      "conference": "south",
+      "teamA": "Capitals",
+      "teamB": "Bruins",
+      "order": 6
+    },
+    {
+      "conference": "midwest",
+      "teamA": "Avalanche",
+      "teamB": "Blues",
+      "order": 7
+    },
+    {
+      "conference": "midwest",
+      "teamA": "Golden Knights",
+      "teamB": "Wild",
+      "order": 8
+    }
+  ]
+}
