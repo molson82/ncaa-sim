@@ -54,5 +54,5 @@ func calculateTeamScore_v1(t models.Team) float64 {
 	//p9 := float64(t.FantasyPoints) / p8
 	//p10 := p7 + p9
 
-	return float64(t.Wins)
+	return float64(t.Fantasypointsfanduel)
 }
