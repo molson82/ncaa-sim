@@ -7,194 +7,194 @@
 	"matches": [
 		{
 			"conference": "west",
-			"teamA": "Gonzaga",
-			"teamB": "Norfolk State",
+			"teamA": "Gonzaga Bulldogs",
+			"teamB": "Georgia State Panthers",
 			"order": 1
 		},
 		{
 			"conference": "west",
-			"teamA": "Oklahoma",
-			"teamB": "Missouri",
+			"teamA": "Boise State Broncos",
+			"teamB": "Memphis Tigers",
 			"order": 2
 		},
 		{
 			"conference": "west",
-			"teamA": "Creighton",
-			"teamB": "USCB",
+			"teamA": "Connecticut Huskies",
+			"teamB": "New Mexico State Aggies",
 			"order": 3
 		},
 		{
 			"conference": "west",
-			"teamA": "Virginia",
-			"teamB": "Ohio",
+			"teamA": "Arkansas Razorbacks",
+			"teamB": "Vermont Catamounts",
 			"order": 4
 		},
 		{
 			"conference": "west",
-			"teamA": "USC",
-			"teamB": "Drake",
+			"teamA": "Alabama Crimson Tide",
+			"teamB": "Notre Dame",
 			"order": 5
 		},
 		{
 			"conference": "west",
-			"teamA": "Kansas",
-			"teamB": "Eastern Washington",
+			"teamA": "Texas Tech Red Raiders",
+			"teamB": "Montana State Bobcats",
 			"order": 6
 		},
 		{
 			"conference": "west",
-			"teamA": "Oregon",
-			"teamB": "VCU",
+			"teamA": "Michigan State Spartans",
+			"teamB": "Davidson Wildcats",
 			"order": 7
 		},
 		{
 			"conference": "west",
-			"teamA": "Iowa",
-			"teamB": "Grand Canyon",
+			"teamA": "Duke Blue Devils",
+			"teamB": "Cal State Fullerton Titans",
 			"order": 8
 		},
 		{
 			"conference": "east",
-			"teamA": "Michigan",
-			"teamB": "Texas Southern",
+			"teamA": "Baylor Bears",
+			"teamB": "Norfolk State Spartans",
 			"order": 9
 		},
 		{
 			"conference": "east",
-			"teamA": "LSU",
-			"teamB": "St. Bonaventure",
+			"teamA": "North Carolina Tar Heels",
+			"teamB": "Marquette Golden Eagles",
 			"order": 10
 		},
 		{
 			"conference": "east",
-			"teamA": "Colorado",
-			"teamB": "Georgetown",
+			"teamA": "Saint Mary's Gaels",
+			"teamB": "Indiana Hoosiers",
 			"order": 11
 		},
 		{
 			"conference": "east",
-			"teamA": "Florida State",
-			"teamB": "UNCG Spartans",
+			"teamA": "UCLA Bruins",
+			"teamB": "Akron Zips",
 			"order": 12
 		},
 		{
 			"conference": "east",
-			"teamA": "BYU",
-			"teamB": "UCLA",
+			"teamA": "Texas Longhorns",
+			"teamB": "Virginia Tech Hokies",
 			"order": 13
 		},
 		{
 			"conference": "east",
-			"teamA": "Texas",
-			"teamB": "Abilene Christian",
+			"teamA": "Purdue Boilermakers",
+			"teamB": "Yale Bulldogs",
 			"order": 14
 		},
 		{
 			"conference": "east",
-			"teamA": "UConn",
-			"teamB": "Maryland",
+			"teamA": "Murray State Racers",
+			"teamB": "San Francisco Dons",
 			"order": 15
 		},
 		{
 			"conference": "east",
-			"teamA": "Alabama",
-			"teamB": "Iona",
+			"teamA": "Kentucky Wildcats",
+			"teamB": "Saint Peter's Peacocks",
 			"order": 16
 		},
 		{
 			"conference": "south",
-			"teamA": "Baylor",
-			"teamB": "Hartford",
+			"teamA": "Arizona Wildcats",
+			"teamB": "Wright State Raiders",
 			"order": 17
 		},
 		{
 			"conference": "south",
-			"teamA": "North Carolina",
-			"teamB": "Wisconsin",
+			"teamA": "Seton Hall Pirates",
+			"teamB": "TCU Horned Frogs",
 			"order": 18
 		},
 		{
 			"conference": "south",
-			"teamA": "Villanova",
-			"teamB": "Winthrop",
+			"teamA": "Houston Cougars",
+			"teamB": "UAB Blazers",
 			"order": 19
 		},
 		{
 			"conference": "south",
-			"teamA": "Purdue",
-			"teamB": "North Texas",
+			"teamA": "Illinois Fighting Illini",
+			"teamB": "Chattanooga Mocs",
 			"order": 20
 		},
 		{
 			"conference": "south",
-			"teamA": "Texas Tech",
-			"teamB": "Utah State",
+			"teamA": "Colorado State Rams",
+			"teamB": "Michigan Dearborn Wolverines",
 			"order": 21
 		},
 		{
 			"conference": "south",
-			"teamA": "Arkansas",
-			"teamB": "Colgate",
+			"teamA": "Tennessee Volunteers",
+			"teamB": "Longwood Lancers",
 			"order": 22
 		},
 		{
 			"conference": "south",
-			"teamA": "Florida",
-			"teamB": "Virginia Tech",
+			"teamA": "Ohio State Buckeyes",
+			"teamB": "Loyola Chicago Ramblers",
 			"order": 23
 		},
 		{
 			"conference": "south",
-			"teamA": "Ohio State",
-			"teamB": "Oral Roberts",
+			"teamA": "Villanova Wildcats",
+			"teamB": "Delaware Fightin' Blue Hens",
 			"order": 24
 		},
 		{
 			"conference": "midwest",
-			"teamA": "Illinois",
-			"teamB": "Drexel",
+			"teamA": "Kansas Jayhawks",
+			"teamB": "Texas Southern Tigers",
 			"order": 25
 		},
 		{
 			"conference": "midwest",
-			"teamA": "Loyola Chicago",
-			"teamB": "Georgia Tech",
+			"teamA": "San Diego State Aztecs",
+			"teamB": "Creighton Bluejays",
 			"order": 26
 		},
 		{
 			"conference": "midwest",
-			"teamA": "Tennessee",
-			"teamB": "Oregon State",
+			"teamA": "Iowa Hawkeyes",
+			"teamB": "Richmond Spiders",
 			"order": 27
 		},
 		{
 			"conference": "midwest",
-			"teamA": "Oklahoma State",
-			"teamB": "Liberty",
+			"teamA": "Providence Friars",
+			"teamB": "South Dakota State Jackrabbits",
 			"order": 28
 		},
 		{
 			"conference": "midwest",
-			"teamA": "San Diego State",
-			"teamB": "Syracuse",
+			"teamA": "LSU Tigers",
+			"teamB": "Iowa State Cyclones",
 			"order": 29
 		},
 		{
 			"conference": "midwest",
-			"teamA": "West Virginia",
-			"teamB": "Morehead State",
+			"teamA": "Wisconsin Badgers",
+			"teamB": "Colgate Raiders",
 			"order": 30
 		},
 		{
 			"conference": "midwest",
-			"teamA": "Clemson",
-			"teamB": "Rutgers",
+			"teamA": "USC Trojans",
+			"teamB": "Miami (FL) Hurricanes",
 			"order": 31
 		},
 		{
 			"conference": "midwest",
-			"teamA": "Houston",
-			"teamB": "Cleveland State",
+			"teamA": "Auburn Tigers",
+			"teamB": "Jackson State Tigers",
 			"order": 32
 		}
 	]
